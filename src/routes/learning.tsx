@@ -7,6 +7,12 @@ import video03Thumb from "@/assets/robworks-video-03.jpg";
 import video04Thumb from "@/assets/robworks-video-04.jpg";
 import video05Thumb from "@/assets/robworks-video-05.jpg";
 import video06Thumb from "@/assets/robworks-video-06.jpg";
+import video07Thumb from "@/assets/robworks-video-07.jpg";
+import video08Thumb from "@/assets/robworks-video-08.jpg";
+import video09Thumb from "@/assets/robworks-video-09.jpg";
+import video10Thumb from "@/assets/robworks-video-10.jpg";
+import video11Thumb from "@/assets/robworks-video-11.jpg";
+import video12Thumb from "@/assets/robworks-video-12.jpg";
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -63,12 +69,12 @@ const videos: Video[] = [
   { id: "v04", title: "マップを作ろう！", category: "Studio", description: "ゲームの基本、マップ制作。ROBLOXは、他の人の作った色々なパーツをダウンロードして利用できるよ。好きな木を選んで、階段を作れば、公園ができる。キミの近所の公園を再現してみても面白いね！", url: "#", thumbnail: video04Thumb },
   { id: "v05", title: "地形を変えよう！", category: "Studio", description: "スタジオを使って、地形の編集方法を教えよう。これで、好きな島が作れるね！島が作れるって事は・・がんばれば、日本地図も作れちゃうかも？", url: "#", thumbnail: video05Thumb },
   { id: "v06", title: "世界を変えてみよう", category: "Studio", description: "雨が降ったり、夜にしたり、色々な地形を作れるよ。そして、ゴールを設定して自分だけのアスレチックを作ってみよう！今までに覚えた操作方法で、ブロックを配置して、AIさんにお願いすれば、カンタンにアスレチック（Obby）ゲームが出来たよ！", url: "#", thumbnail: video06Thumb },
-  { id: "v07", title: "はじめての作品づくり", category: "制作", description: "シンプルな作品を通じて、制作の流れ全体をつかみます。", url: "#" },
-  { id: "v08", title: "作品を公開する方法", category: "制作", description: "つくった作品を公開し、家族や友だちに見せる手順を紹介します。", url: "#" },
-  { id: "v09", title: "保護者向け設定の基本", category: "保護者", description: "保護者の方が確認しておきたい基本的な設定をまとめます。", url: "#" },
-  { id: "v10", title: "オンラインで安全に楽しむために", category: "安全性", description: "オンラインでの基本的なマナーと、注意したいポイントを学びます。", url: "#" },
-  { id: "v11", title: "Civility：気持ちよく参加するために", category: "安全性", description: "他のプレイヤーと気持ちよく関わるための考え方を紹介します。", url: "#" },
-  { id: "v12", title: "次のステップ：ワークショップとコンテスト", category: "次の一歩", description: "学びをさらに深めるための、ワークショップとコンテスト情報です。", url: "#" },
+  { id: "v07", title: "ゲームの公開方法", category: "公開", description: "ロブロックスの最大の魅力は、自分でゲームを作って皆に遊んでもらえる事。自分で作ったゲームに誰かが入ってきて、「面白いね」なんて言われたら、感動モノだよ！是非味わってほしいぞ。", url: "#", thumbnail: video07Thumb },
+  { id: "v08", title: "顔認証って何？", category: "安全性", description: "重要な安全機能、年齢認証（顔認証）のお知らせです。アカウントを作る時に、ちゃんと生年月日を入力する必要があるって言ったでしょ？その理由がコレだね。年齢が違う人とは接触がないような仕組みになってるんだ。保護者アカウントは事前に年齢認証が推奨されます。書類を使って認証をしておくといいよ。詳しくは、後の動画で説明してるから、そちらも見てみてね。", url: "#", thumbnail: video08Thumb },
+  { id: "v09", title: "書類認証って？", category: "保護者", description: "ROBLOXで保護者アカウントになって子供のペアレンタルコントロールを使うには、保護者アカウントの年齢認証が必要になる。ちょっと面倒になっちゃうけど、書類を使って確実な認証が必要なんだ。", url: "#", thumbnail: video09Thumb },
+  { id: "v10", title: "ネットマナーって何？", category: "安全性", description: "ROBLOXに限らず、ネット上には悪い人もいる。そういう人から身を守るため、知識も必要だ。そしてなにより、友達と楽しく遊ぶってのが大切だよ！何が必要なのか、是非見てみてね。", url: "#", thumbnail: video10Thumb },
+  { id: "v11", title: "デジタル・シビリティ", category: "安全性", description: "ROBLOXは犯罪行為は防いでくれるけど、嫌な人や行動までは規制できない。だから、君自身も相手が嫌だと思うような事はしないようにしよう。誰かをいじめたり、悪口を言うのも良くないよ。人間関係はリアルな世界と同じだね！", url: "#", thumbnail: video11Thumb },
+  { id: "v12", title: "世界を理解してゲームを作ろう", category: "次の一歩", description: "色々知識もついて、ROBLOXの世界で生活して行けるようになったと思う。次からはROBLOXで用意されているチュートリアルを使って、実際のゲーム（エクスペリエンス）を作って、公開する手順を説明するよ。今回は、その最後の準備編だ。次回から、本格的にゲームを作って行くぞ！", url: "#", thumbnail: video12Thumb },
 ];
 
 const steps = [
