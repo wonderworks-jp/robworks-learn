@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/robworks-logo.png";
 
 export function Footer() {
   return (
