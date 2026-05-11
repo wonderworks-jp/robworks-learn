@@ -560,3 +560,28 @@ function HeroVisual() {
     </div>
   );
 }
+
+function ExpandableDescription({ text }: { text: string }) {
+  const [expanded, setExpanded] = useState(false);
+  const isLong = text.length > 60;
+  return (
+    <div className="mt-2">
+      <p
+        className={`text-sm leading-relaxed text-muted-foreground ${
+          !expanded && isLong ? "line-clamp-2" : ""
+        }`}
+      >
+        {text}
+      </p>
+      {isLong && (
+        <button
+          type="button"
+          onClick={() => setExpanded((e) => !e)}
+          className="mt-1.5 text-xs font-semibold text-accent hover:underline"
+        >
+          {expanded ? "閉じる" : "もっと見る"}
+        </button>
+      )}
+    </div>
+  );
+}
