@@ -108,7 +108,7 @@ const materials: Material[] = [
 
 const parentLinks = [
   { title: "安全性について", description: "Robloxの安全性に関する基本的な考え方や取り組みを確認できます。", url: "https://about.roblox.com/ja/%E5%AE%89%E5%85%A8%E6%80%A7", thumbnail: safetyCommitmentImg },
-  { title: "Civility & Well-being", description: "Roblox上での前向きなコミュニケーションやウェルビーイングに関する情報です。", url: "https://about.roblox.com/ja/ja-civility-and-well-being", thumbnail: safetyWellbeingImg },
+  { title: "デジタルウェルビーイング、メンタルヘルスなど", description: "Roblox上での前向きなコミュニケーションやウェルビーイングに関する情報です。", url: "https://about.roblox.com/ja/ja-civility-and-well-being", thumbnail: safetyWellbeingImg },
   { title: "ペアレンタルコントロール", description: "保護者が利用できる管理機能や設定について確認できます。", url: "https://about.roblox.com/ja/parental-controls", thumbnail: safetyParentalControlImg },
   { title: "年齢に応じた安全性", description: "年齢に合わせた安全性への考え方や設定を確認できます。", url: "https://about.roblox.com/ja/safety-by-age", thumbnail: safetyAgeSettingsImg },
   { title: "年齢推奨", description: "Roblox上の体験に関する年齢推奨の仕組みについて確認できます。", url: "https://about.roblox.com/ja/%E5%B9%B4%E9%BD%A2%E6%8E%A8%E5%AE%9A", thumbnail: safetyAgeEstimateImg },
