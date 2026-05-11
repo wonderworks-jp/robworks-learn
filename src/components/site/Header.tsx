@@ -19,8 +19,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link to="/" className="font-display text-xl font-extrabold tracking-tight text-foreground">
-          RobWorks
+        <Link to="/" className="flex items-center" aria-label="RobWorks ホーム">
+          <img src={logo} alt="RobWorks" className="h-10 w-auto sm:h-11" />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
