@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 import iconR from "@/assets/robworks-icon.png";
 import heroVideoThumb from "@/assets/robworks-hero-video.jpg";
 import video01Thumb from "@/assets/robworks-video-01.jpg";
@@ -247,7 +246,9 @@ function LearningPage() {
                   <h3 className="mt-3 font-display text-lg font-extrabold tracking-tight">
                     {v.title}
                   </h3>
-                  <ExpandableDescription text={v.description} />
+                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
+                    {v.description}
+                  </p>
                   <a
                     href={v.url}
                     target="_blank"
@@ -557,31 +558,6 @@ function HeroVisual() {
           <div className="h-1.5 w-2/3 rounded-full bg-[var(--surface-soft)]" />
         </div>
       </div>
-    </div>
-  );
-}
-
-function ExpandableDescription({ text }: { text: string }) {
-  const [expanded, setExpanded] = useState(false);
-  const isLong = text.length > 60;
-  return (
-    <div className="mt-2">
-      <p
-        className={`text-sm leading-relaxed text-muted-foreground ${
-          !expanded && isLong ? "line-clamp-2" : ""
-        }`}
-      >
-        {text}
-      </p>
-      {isLong && (
-        <button
-          type="button"
-          onClick={() => setExpanded((e) => !e)}
-          className="mt-1.5 text-xs font-semibold text-accent hover:underline"
-        >
-          {expanded ? "閉じる" : "もっと見る"}
-        </button>
-      )}
     </div>
   );
 }
