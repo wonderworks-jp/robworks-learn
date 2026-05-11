@@ -13,6 +13,7 @@ import video09Thumb from "@/assets/robworks-video-09.jpg";
 import video10Thumb from "@/assets/robworks-video-10.jpg";
 import video11Thumb from "@/assets/robworks-video-11.jpg";
 import video12Thumb from "@/assets/robworks-video-12.jpg";
+import safetyCommitmentImg from "@/assets/safety-commitment.webp";
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -101,7 +102,7 @@ const materials: Material[] = [
 ];
 
 const parentLinks = [
-  { title: "安全性について", description: "Robloxの安全性に関する基本的な考え方や取り組みを確認できます。", url: "https://about.roblox.com/ja/%E5%AE%89%E5%85%A8%E6%80%A7" },
+  { title: "安全性について", description: "Robloxの安全性に関する基本的な考え方や取り組みを確認できます。", url: "https://about.roblox.com/ja/%E5%AE%89%E5%85%A8%E6%80%A7", thumbnail: safetyCommitmentImg },
   { title: "Civility & Well-being", description: "Roblox上での前向きなコミュニケーションやウェルビーイングに関する情報です。", url: "https://about.roblox.com/ja/ja-civility-and-well-being" },
   { title: "ペアレンタルコントロール", description: "保護者が利用できる管理機能や設定について確認できます。", url: "https://about.roblox.com/ja/parental-controls" },
   { title: "年齢に応じた安全性", description: "年齢に合わせた安全性への考え方や設定を確認できます。", url: "https://about.roblox.com/ja/safety-by-age" },
@@ -359,10 +360,14 @@ function LearningPage() {
                 className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-shadow hover:shadow-[var(--shadow-elevated)]"
                 style={{ boxShadow: "var(--shadow-card)" }}
               >
-                <div className="relative flex aspect-[16/9] items-center justify-center bg-[var(--surface-soft)]">
-                  <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                    Roblox Official
-                  </span>
+                <div className="relative flex aspect-[16/9] items-center justify-center overflow-hidden bg-[var(--surface-soft)]">
+                  {"thumbnail" in l && l.thumbnail ? (
+                    <img src={l.thumbnail} alt={l.title} className="absolute inset-0 h-full w-full object-cover" />
+                  ) : (
+                    <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                      Roblox Official
+                    </span>
+                  )}
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-start justify-between gap-3">
