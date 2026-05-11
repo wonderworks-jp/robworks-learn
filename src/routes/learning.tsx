@@ -230,10 +230,14 @@ function LearningPage() {
                 className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-shadow hover:shadow-[var(--shadow-elevated)]"
                 style={{ boxShadow: "var(--shadow-card)" }}
               >
-                <div className="relative aspect-video w-full bg-[var(--surface-soft)]">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <PlayCircle className="size-12 text-muted-foreground/60 transition-colors group-hover:text-accent" strokeWidth={1.5} />
-                  </div>
+                <div className="relative aspect-video w-full overflow-hidden bg-[var(--surface-soft)]">
+                  {v.thumbnail ? (
+                    <img src={v.thumbnail} alt={v.title} className="absolute inset-0 h-full w-full object-cover" />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <PlayCircle className="size-12 text-muted-foreground/60 transition-colors group-hover:text-accent" strokeWidth={1.5} />
+                    </div>
+                  )}
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <span className="inline-flex w-fit items-center rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
