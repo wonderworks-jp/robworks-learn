@@ -247,9 +247,7 @@ function LearningPage() {
                   <h3 className="mt-3 font-display text-lg font-extrabold tracking-tight">
                     {v.title}
                   </h3>
-                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
-                    {v.description}
-                  </p>
+                  <ExpandableDescription text={v.description} />
                   <a
                     href={v.url}
                     target="_blank"
