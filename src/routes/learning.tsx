@@ -483,7 +483,7 @@ function HeroVisual() {
       <img
         src={iconR}
         alt="RobWorks"
-        className="absolute -top-6 -right-2 z-10 h-20 w-20 object-contain drop-shadow-xl sm:h-24 sm:w-24"
+        className="absolute -top-12 -right-6 z-10 h-32 w-32 object-contain drop-shadow-xl sm:h-40 sm:w-40 lg:h-48 lg:w-48"
       />
 
       {/* YouTube Learning card */}
