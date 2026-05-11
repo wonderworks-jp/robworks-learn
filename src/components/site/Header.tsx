@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/robworks-logo.png";
 
 const navItems = [
   { label: "RobWorksとは", to: "/about" },
