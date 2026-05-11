@@ -478,6 +478,14 @@ function HeroVisual() {
       <div className="absolute inset-0 rounded-[2rem] bg-[var(--surface-soft)]" />
       <div className="absolute -right-6 top-10 h-40 w-40 rounded-full bg-accent-soft blur-2xl" aria-hidden />
 
+      {/* Brand mark badge */}
+      <img
+        src={iconR}
+        alt=""
+        aria-hidden
+        className="absolute -top-6 -right-2 z-10 h-20 w-20 -rotate-6 drop-shadow-xl sm:h-24 sm:w-24"
+      />
+
       {/* YouTube Learning card */}
       <div
         className="absolute left-4 top-6 w-[78%] rounded-3xl border border-border bg-card p-5 sm:left-8"
