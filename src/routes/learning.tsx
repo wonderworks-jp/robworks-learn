@@ -52,7 +52,7 @@ type Video = {
 };
 
 const videos: Video[] = [
-  { id: "v01", title: "ロブロックスでゲームをつくろう", category: "入門", description: "ROBLOX STUDIOって何だろう？普段、ロブロックスで遊びはするけど、ゲームを自分で作った事のある人は少ないんじゃないかな？実は、普段遊んでいるゲームも、誰かが作ったゲームなんだ。キミも自分だけのゲームを作ってみたいでしょ？そんな人にお勧めの動画だよ！", category: "入門", description: "ROBLOX STUDIOって何だろう？普段、ロブロックスで遊びはするけど、ゲームを自分で作った事のある人は少ないんじゃないかな？実は、普段遊んでいるゲームも、誰かが作ったゲームなんだ。キミも自分だけのゲームを作ってみたいでしょ？そんな人にお勧めの動画だよ！", url: "#", thumbnail: video01Thumb },
+  { id: "v01", title: "ロブロックスでゲームをつくろう", category: "入門", description: "ROBLOX STUDIOって何だろう？普段、ロブロックスで遊びはするけど、ゲームを自分で作った事のある人は少ないんじゃないかな？実は、普段遊んでいるゲームも、誰かが作ったゲームなんだ。キミも自分だけのゲームを作ってみたいでしょ？そんな人にお勧めの動画だよ！", url: "#", thumbnail: video01Thumb },
   { id: "v02", title: "アカウント登録と基本設定", category: "入門", description: "はじめてのアカウント作成と、安全に始めるための基本設定を確認します。", url: "#" },
   { id: "v03", title: "Robloxの画面の見方", category: "入門", description: "ホーム、検索、フレンド、設定など、画面の構成をやさしく解説します。", url: "#" },
   { id: "v04", title: "Roblox Studioのインストール", category: "Studio", description: "制作の入口となるRoblox Studioのインストール手順を紹介します。", url: "#" },
