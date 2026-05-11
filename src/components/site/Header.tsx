@@ -26,7 +26,7 @@ export function Header() {
           {navItems.map((item) => (
             <Link
               key={item.to}
-              to={item.to as string}
+              to={item.to as any}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               activeProps={{ className: "text-sm font-semibold text-accent" }}
             >
@@ -51,7 +51,7 @@ export function Header() {
             {navItems.map((item) => (
               <Link
                 key={item.to}
-                to={item.to as string}
+                to={item.to as any}
                 onClick={() => setOpen(false)}
                 className="rounded-xl px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-foreground"
                 activeProps={{ className: "rounded-xl px-3 py-2 text-sm font-semibold text-accent bg-accent-soft" }}

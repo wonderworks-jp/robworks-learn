@@ -63,7 +63,7 @@ function FooterCol({
         {links.map((l) => (
           <li key={l.to}>
             <Link
-              to={l.to}
+              to={l.to as any}
               className="text-sm text-muted-foreground transition-colors hover:text-accent"
             >
               {l.label}
