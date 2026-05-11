@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import iconR from "@/assets/robworks-icon.png";
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
