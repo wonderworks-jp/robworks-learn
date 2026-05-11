@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/robworks-logo.png";
 
 export function Footer() {
   return (
@@ -6,8 +7,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
           <div>
-            <Link to="/" className="font-display text-2xl font-extrabold tracking-tight text-foreground">
-              RobWorks
+            <Link to="/" className="inline-flex items-center" aria-label="RobWorks ホーム">
+              <img src={logo} alt="RobWorks" className="h-12 w-auto" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               Robloxを通じて、子どもたちが「遊ぶ」から「つくる」へ進むための学びの場を提供しています。
