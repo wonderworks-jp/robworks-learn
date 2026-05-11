@@ -240,10 +240,7 @@ function LearningPage() {
                   )}
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <span className="inline-flex w-fit items-center rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
-                    {v.category}
-                  </span>
-                  <h3 className="mt-3 font-display text-lg font-extrabold tracking-tight">
+                  <h3 className="font-display text-lg font-extrabold tracking-tight">
                     {v.title}
                   </h3>
                   <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
