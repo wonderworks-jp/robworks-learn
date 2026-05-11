@@ -4,6 +4,9 @@ import heroVideoThumb from "@/assets/robworks-hero-video.jpg";
 import video01Thumb from "@/assets/robworks-video-01.jpg";
 import video02Thumb from "@/assets/robworks-video-02.jpg";
 import video03Thumb from "@/assets/robworks-video-03.jpg";
+import video04Thumb from "@/assets/robworks-video-04.jpg";
+import video05Thumb from "@/assets/robworks-video-05.jpg";
+import video06Thumb from "@/assets/robworks-video-06.jpg";
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -57,9 +60,9 @@ const videos: Video[] = [
   { id: "v01", title: "ロブロックスでゲームをつくろう", category: "入門", description: "ROBLOX STUDIOって何だろう？普段、ロブロックスで遊びはするけど、ゲームを自分で作った事のある人は少ないんじゃないかな？実は、普段遊んでいるゲームも、誰かが作ったゲームなんだ。キミも自分だけのゲームを作ってみたいでしょ？そんな人にお勧めの動画だよ！", url: "#", thumbnail: video01Thumb },
   { id: "v02", title: "ゲームを作る前の準備", category: "入門", description: "ROBLOXでゲームを作るには、パソコンが必要なんだ。ROBLOX STUDIO（ロブロックススタジオ）っていうソフトを使う必要があるよ。インストール方法は、大人の人に相談してみてもいいよ。とにかく、スタジオがあれば、なんだってできるようになる！", url: "#", thumbnail: video02Thumb },
   { id: "v03", title: "ブロックを配置しよう", category: "入門", description: "ゲームの基本はマップ。どんなゲームだって、マップがなくっちゃ遊べないからね。スタジオを使えば、色々な物を好きな様に配置できるようになる。迷路だって、階段だって、ボールだって、なんでも好きな所に好きな様に置けるからね！", url: "#", thumbnail: video03Thumb },
-  { id: "v04", title: "Roblox Studioのインストール", category: "Studio", description: "制作の入口となるRoblox Studioのインストール手順を紹介します。", url: "#" },
-  { id: "v05", title: "Roblox Studioの基本操作", category: "Studio", description: "視点の動かし方や基本的なツールの使い方を確認します。", url: "#" },
-  { id: "v06", title: "パーツを置いてみよう", category: "Studio", description: "最初の一歩として、パーツの配置と編集を体験します。", url: "#" },
+  { id: "v04", title: "マップを作ろう！", category: "Studio", description: "ゲームの基本、マップ制作。ROBLOXは、他の人の作った色々なパーツをダウンロードして利用できるよ。好きな木を選んで、階段を作れば、公園ができる。キミの近所の公園を再現してみても面白いね！", url: "#", thumbnail: video04Thumb },
+  { id: "v05", title: "地形を変えよう！", category: "Studio", description: "スタジオを使って、地形の編集方法を教えよう。これで、好きな島が作れるね！島が作れるって事は・・がんばれば、日本地図も作れちゃうかも？", url: "#", thumbnail: video05Thumb },
+  { id: "v06", title: "世界を変えてみよう", category: "Studio", description: "雨が降ったり、夜にしたり、色々な地形を作れるよ。そして、ゴールを設定して自分だけのアスレチックを作ってみよう！今までに覚えた操作方法で、ブロックを配置して、AIさんにお願いすれば、カンタンにアスレチック（Obby）ゲームが出来たよ！", url: "#", thumbnail: video06Thumb },
   { id: "v07", title: "はじめての作品づくり", category: "制作", description: "シンプルな作品を通じて、制作の流れ全体をつかみます。", url: "#" },
   { id: "v08", title: "作品を公開する方法", category: "制作", description: "つくった作品を公開し、家族や友だちに見せる手順を紹介します。", url: "#" },
   { id: "v09", title: "保護者向け設定の基本", category: "保護者", description: "保護者の方が確認しておきたい基本的な設定をまとめます。", url: "#" },
