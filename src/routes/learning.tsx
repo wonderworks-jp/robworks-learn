@@ -14,6 +14,11 @@ import video10Thumb from "@/assets/robworks-video-10.jpg";
 import video11Thumb from "@/assets/robworks-video-11.jpg";
 import video12Thumb from "@/assets/robworks-video-12.jpg";
 import safetyCommitmentImg from "@/assets/safety-commitment.webp";
+import safetyWellbeingImg from "@/assets/safety-wellbeing.webp";
+import safetyParentalControlImg from "@/assets/safety-parental-control.webp";
+import safetyAgeSettingsImg from "@/assets/safety-age-settings.webp";
+import safetyAgeEstimateImg from "@/assets/safety-age-estimate.webp";
+import safetyToolImg from "@/assets/safety-tool.webp";
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -103,11 +108,11 @@ const materials: Material[] = [
 
 const parentLinks = [
   { title: "安全性について", description: "Robloxの安全性に関する基本的な考え方や取り組みを確認できます。", url: "https://about.roblox.com/ja/%E5%AE%89%E5%85%A8%E6%80%A7", thumbnail: safetyCommitmentImg },
-  { title: "Civility & Well-being", description: "Roblox上での前向きなコミュニケーションやウェルビーイングに関する情報です。", url: "https://about.roblox.com/ja/ja-civility-and-well-being" },
-  { title: "ペアレンタルコントロール", description: "保護者が利用できる管理機能や設定について確認できます。", url: "https://about.roblox.com/ja/parental-controls" },
-  { title: "年齢に応じた安全性", description: "年齢に合わせた安全性への考え方や設定を確認できます。", url: "https://about.roblox.com/ja/safety-by-age" },
-  { title: "年齢推奨", description: "Roblox上の体験に関する年齢推奨の仕組みについて確認できます。", url: "https://about.roblox.com/ja/%E5%B9%B4%E9%BD%A2%E6%8E%A8%E5%AE%9A" },
-  { title: "安全性ツール", description: "ユーザーを守るための安全性ツールや機能について確認できます。", url: "https://about.roblox.com/ja/ja-safety-tools" },
+  { title: "Civility & Well-being", description: "Roblox上での前向きなコミュニケーションやウェルビーイングに関する情報です。", url: "https://about.roblox.com/ja/ja-civility-and-well-being", thumbnail: safetyWellbeingImg },
+  { title: "ペアレンタルコントロール", description: "保護者が利用できる管理機能や設定について確認できます。", url: "https://about.roblox.com/ja/parental-controls", thumbnail: safetyParentalControlImg },
+  { title: "年齢に応じた安全性", description: "年齢に合わせた安全性への考え方や設定を確認できます。", url: "https://about.roblox.com/ja/safety-by-age", thumbnail: safetyAgeSettingsImg },
+  { title: "年齢推奨", description: "Roblox上の体験に関する年齢推奨の仕組みについて確認できます。", url: "https://about.roblox.com/ja/%E5%B9%B4%E9%BD%A2%E6%8E%A8%E5%AE%9A", thumbnail: safetyAgeEstimateImg },
+  { title: "安全性ツール", description: "ユーザーを守るための安全性ツールや機能について確認できます。", url: "https://about.roblox.com/ja/ja-safety-tools", thumbnail: safetyToolImg },
 ];
 
 const recommendations = [
