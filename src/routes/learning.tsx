@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import iconR from "@/assets/robworks-icon.png";
 import heroVideoThumb from "@/assets/robworks-hero-video.jpg";
+import video01Thumb from "@/assets/robworks-video-01.jpg";
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -51,7 +52,7 @@ type Video = {
 };
 
 const videos: Video[] = [
-  { id: "v01", title: "Robloxとは", category: "入門", description: "Robloxの基本的な考え方と、世界中で楽しまれている理由を紹介します。", url: "#" },
+  { id: "v01", title: "ロブロックスでゲームをつくろう", category: "入門", description: "ROBLOX STUDIOって何だろう？普段、ロブロックスで遊びはするけど、ゲームを自分で作った事のある人は少ないんじゃないかな？実は、普段遊んでいるゲームも、誰かが作ったゲームなんだ。キミも自分だけのゲームを作ってみたいでしょ？そんな人にお勧めの動画だよ！", url: "#", thumbnail: video01Thumb },
   { id: "v02", title: "アカウント登録と基本設定", category: "入門", description: "はじめてのアカウント作成と、安全に始めるための基本設定を確認します。", url: "#" },
   { id: "v03", title: "Robloxの画面の見方", category: "入門", description: "ホーム、検索、フレンド、設定など、画面の構成をやさしく解説します。", url: "#" },
   { id: "v04", title: "Roblox Studioのインストール", category: "Studio", description: "制作の入口となるRoblox Studioのインストール手順を紹介します。", url: "#" },
@@ -229,10 +230,14 @@ function LearningPage() {
                 className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-shadow hover:shadow-[var(--shadow-elevated)]"
                 style={{ boxShadow: "var(--shadow-card)" }}
               >
-                <div className="relative aspect-video w-full bg-[var(--surface-soft)]">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <PlayCircle className="size-12 text-muted-foreground/60 transition-colors group-hover:text-accent" strokeWidth={1.5} />
-                  </div>
+                <div className="relative aspect-video w-full overflow-hidden bg-[var(--surface-soft)]">
+                  {v.thumbnail ? (
+                    <img src={v.thumbnail} alt={v.title} className="absolute inset-0 h-full w-full object-cover" />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <PlayCircle className="size-12 text-muted-foreground/60 transition-colors group-hover:text-accent" strokeWidth={1.5} />
+                    </div>
+                  )}
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <span className="inline-flex w-fit items-center rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent">
