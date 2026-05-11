@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import iconR from "@/assets/robworks-icon.png";
 import heroVideoThumb from "@/assets/robworks-hero-video.jpg";
 import video01Thumb from "@/assets/robworks-video-01.jpg";
+import video02Thumb from "@/assets/robworks-video-02.jpg";
+import video03Thumb from "@/assets/robworks-video-03.jpg";
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -53,8 +55,8 @@ type Video = {
 
 const videos: Video[] = [
   { id: "v01", title: "ロブロックスでゲームをつくろう", category: "入門", description: "ROBLOX STUDIOって何だろう？普段、ロブロックスで遊びはするけど、ゲームを自分で作った事のある人は少ないんじゃないかな？実は、普段遊んでいるゲームも、誰かが作ったゲームなんだ。キミも自分だけのゲームを作ってみたいでしょ？そんな人にお勧めの動画だよ！", url: "#", thumbnail: video01Thumb },
-  { id: "v02", title: "アカウント登録と基本設定", category: "入門", description: "はじめてのアカウント作成と、安全に始めるための基本設定を確認します。", url: "#" },
-  { id: "v03", title: "Robloxの画面の見方", category: "入門", description: "ホーム、検索、フレンド、設定など、画面の構成をやさしく解説します。", url: "#" },
+  { id: "v02", title: "ゲームを作る前の準備", category: "入門", description: "ROBLOXでゲームを作るには、パソコンが必要なんだ。ROBLOX STUDIO（ロブロックススタジオ）っていうソフトを使う必要があるよ。インストール方法は、大人の人に相談してみてもいいよ。とにかく、スタジオがあれば、なんだってできるようになる！", url: "#", thumbnail: video02Thumb },
+  { id: "v03", title: "ブロックを配置しよう", category: "入門", description: "ゲームの基本はマップ。どんなゲームだって、マップがなくっちゃ遊べないからね。スタジオを使えば、色々な物を好きな様に配置できるようになる。迷路だって、階段だって、ボールだって、なんでも好きな所に好きな様に置けるからね！", url: "#", thumbnail: video03Thumb },
   { id: "v04", title: "Roblox Studioのインストール", category: "Studio", description: "制作の入口となるRoblox Studioのインストール手順を紹介します。", url: "#" },
   { id: "v05", title: "Roblox Studioの基本操作", category: "Studio", description: "視点の動かし方や基本的なツールの使い方を確認します。", url: "#" },
   { id: "v06", title: "パーツを置いてみよう", category: "Studio", description: "最初の一歩として、パーツの配置と編集を体験します。", url: "#" },
