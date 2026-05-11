@@ -482,9 +482,8 @@ function HeroVisual() {
       {/* Brand mark badge */}
       <img
         src={iconR}
-        alt=""
-        aria-hidden
-        className="absolute -top-6 -right-2 z-10 h-20 w-20 -rotate-6 drop-shadow-xl sm:h-24 sm:w-24"
+        alt="RobWorks"
+        className="absolute -top-6 -right-2 z-10 h-20 w-20 object-contain drop-shadow-xl sm:h-24 sm:w-24"
       />
 
       {/* YouTube Learning card */}
