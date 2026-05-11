@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import iconR from "@/assets/robworks-icon.png";
+import heroVideoThumb from "@/assets/robworks-hero-video.jpg";
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -497,7 +498,14 @@ function HeroVisual() {
           </span>
           <PlayCircle className="size-5 text-accent" strokeWidth={1.75} />
         </div>
-        <div className="mt-4 aspect-video w-full rounded-xl bg-[var(--surface-soft)]" />
+        <div className="mt-4 aspect-video w-full overflow-hidden rounded-xl bg-[var(--surface-soft)]">
+          <img
+            src={heroVideoThumb}
+            alt="第11回 Robloxでの生活② デジタル・シビリティ"
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        </div>
         <p className="mt-4 font-display text-sm font-extrabold tracking-tight text-foreground">
           Roblox Studioの基本操作
         </p>
